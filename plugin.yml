@@ -1,0 +1,34 @@
+name: ServerCore
+version: 1.0
+api: [3.0.0-ALPHA8, 3.0.0-ALPHA9]
+author: Potatoe
+main: Potatoe\Core
+
+permissions:
+  core.all:
+    default: op
+    description: Gives All Permissions
+    children:
+      core.cmd.all:
+        default: op
+        description: Gives All Commands Permissions
+        children:
+          core.cmd.feed:
+            default: op
+            description: /feed
+          core.cmd.heal:
+            default: op
+            description: /heal
+          core.cmd.nick:
+            default: op
+            description: /nick
+      core.anti.bypass:
+        default: op
+        description: Bypass All Anti Spam Features
+        children:
+          core.anti.bypass.advert:
+            default: op
+            description: Bypass AAnti-Advertising
+          core.bypass.swear:
+            default: op
+            description: Bypass Anti-Swearing
