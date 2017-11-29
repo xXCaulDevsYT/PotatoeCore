@@ -4,8 +4,8 @@ Want A Core For Your Pocketmine-MP Server? Here's a Template!
 ## Includes:
 
 - [x] Commands
-  - [x] /Feed
-  - [x] /Heal
+  - [x] /feed
+  - [x] /heal
   - [x] /nick 
   - [x] /xyz
 - [x] Player Join 
