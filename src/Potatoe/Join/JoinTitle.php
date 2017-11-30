@@ -8,7 +8,7 @@ use pocketmine\event\player\PlayerJoinEvent;
 use pocketmine\Player;
 use pocketmine\Server;
 
-class JoinTitle implements Listener 
+class JoinTitle implements Listener {
 
   public function onJoin(PlayerJoinEvent $event) {
     $player = $event->getPlayer();
