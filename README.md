@@ -12,8 +12,7 @@ Want A Core For Your Pocketmine-MP Server? Here's One For You To Edit!
 - [x] Player Join 
   - [x] Chat Text
   - [x] Title
-  - [ ] Guardian Effects (Work In Progress)
-  
+  
 - [x] Messages
   - [x] Broadcaster
   
