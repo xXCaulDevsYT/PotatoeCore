@@ -18,7 +18,7 @@ class AntiAdvertising implements Listener {
   public function onChat(PlayerChatEvent $event) {
     $msg = $event->getMessage();
     $player = $event->getPlayer();
-    if(!$player hasPermisson("core.all") || !$player hasPermisson("core.anti.bypass") || !$player hasPermisson("core.anti.bypass.advert") {
+    if(!$player->hasPermisson("core.all") || !$player->hasPermisson("core.anti.bypass") || !$player->hasPermisson("core.anti.bypass.advert") {
       foreach($this->links as $links) {
         if(strpos($msg, $links) !== false) {
           $player->sendMessage(TextFormat::RED . "§l§9Anti-Spam>§r§7 No Swearing");
