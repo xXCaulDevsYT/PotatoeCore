@@ -1,8 +1,8 @@
 <?php
 namespace Potatoe;
 
-use Potatoe\Anti\Chat\AntiAdvertising;
-use Potatoe\Anti\Chat\AntiSwearing;
+use Potatoe\Anti\AntiAdvertising;
+use Potatoe\Anti\AntiSwearing;
 use Potatoe\Command\FeedCommand;
 use Potatoe\Command\HealCommand;
 use Potatoe\Command\NickCommand;
