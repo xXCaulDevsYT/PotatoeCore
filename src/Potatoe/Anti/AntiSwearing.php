@@ -18,11 +18,13 @@ class AntiSwearing implements Listener {
   public function onChat(PlayerChatEvent $event) {
     $msg = $event->getMessage();
     $player = $event->getPlayer();
-    foreach($this->badwords as $badwords) {
-      if(strpos($msg, $word) !== false) {
-        $player->sendMessage(TextFormat::RED . "§l§9Anti-Spam>§r§7 No Swearing");
-        $event->setCancelled();
-        return;
+    if(!$player hasPermisson("core.all") || !$player hasPermisson("core.anti.bypass") || !$player hasPermisson("core.anti.bypass.swear") {
+      foreach($this->badwords as $badwords) {
+        if(strpos($msg, $badwords) !== false) {
+          $player->sendMessage(TextFormat::RED . "§l§9Anti-Spam>§r§7 No Swearing");
+          $event->setCancelled();
+          return;
+        }
       }
     } 
   }
