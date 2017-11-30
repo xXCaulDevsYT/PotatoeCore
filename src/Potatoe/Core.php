@@ -6,7 +6,7 @@ use Potatoe\Anti\Chat\AntiSwearing;
 use Potatoe\Command\FeedCommand;
 use Potatoe\Command\HealCommand;
 use Potatoe\Command\NickCommand;
-use Potatoe\Command\XYZCommand
+use Potatoe\Command\XYZCommand;
 use Potatoe\Join\JoinMessage;
 use Potatoe\Join\JoinTitle;
 use Potatoe\Message\Broadcast;
