@@ -8,7 +8,7 @@ use pocketmine\command\CommandSender;
 use pocketmine\command\PluginIdentifiableCommand;
 use pocketmine\plugin\Plugin;
 
-class BaseCommand extends implements PluginIdentifiableCommand {
+class BaseCommand extends Command implements PluginIdentifiableCommand {
 
   private $plugin;
   
