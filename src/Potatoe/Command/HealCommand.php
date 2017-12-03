@@ -7,7 +7,7 @@ use pocketmine\command\CommandSender;
 use pocketmine\Player;
 use pocketmine\plugin\Plugin;
 
-class FeedCommand extends BaseCommand {
+class HealCommand extends BaseCommand {
 
   private $plugin;
   
