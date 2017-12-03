@@ -4,7 +4,7 @@ namespace Potatoe\Anti;
 use Potatoe\Core;
 
 use pocketmine\event\Listener;
-use pocketmine\event\player/PlayerChatEvent;
+use pocketmine\event\player\PlayerChatEvent;
 use pocketmine\Player;
 
 class AntiAdvertising implements Listener {
