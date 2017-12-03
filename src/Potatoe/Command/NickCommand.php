@@ -38,6 +38,7 @@ class NickCommand extends BaseCommand {
    }else{
      $sender->sendMessage(Core::USE_IN_GAME);     
    return true;
+	   }
   }
   public function nick($player, $nick) {
     if($player instanceof Player){
