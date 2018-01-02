@@ -16,10 +16,10 @@ class JoinTitle implements Listener {
     $title = "Welcome";
     $subtitle = "To The Server";
     $pk = new LevelEventPacket();
-		$pk->evid = LevelEventPacket::EVENT_GUARDIAN_CURSE;
-		$pk->data = 1;
-		$pk->position = $this->player->asVector3();
-		$this->player->dataPacket($pk);
+    $pk->evid = LevelEventPacket::EVENT_GUARDIAN_CURSE;
+    $pk->data = 1;
+    $pk->position = $this->player->asVector3();
+    $this->player->dataPacket($pk);
     $player->addTitle($title, $subtitle);
   }
 }
