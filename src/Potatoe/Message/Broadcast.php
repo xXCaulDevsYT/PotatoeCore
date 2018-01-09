@@ -16,6 +16,6 @@ class Broadcast extends PluginTask {
       "§l§9Tip> §r§7Message 3"
     ];
     $details = array_rand($input);
-    $this->getOwner()->broadcastMessage(C::GRAY . $input[$details]);
+    Server::getInstance()->broadcastMessage(C::GRAY . $input[$details]);
   }
 }
