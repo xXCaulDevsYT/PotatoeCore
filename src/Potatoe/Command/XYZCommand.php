@@ -16,9 +16,9 @@ class XYZCommand extends BaseCommand {
     parent::__construct($plugin, "xyz", "Check Your XYZ", "/xyz", ["xyz"]);
   }
   public function execute(CommandSender $sender, $commandLabel, array $args): bool {
-  
-    (!isset($args[0])) {
-      $sender->sendMessage("§l§9Coords>§r§7 You're Standing At\n§7 X - " . round($sender->getX())"\n§7 Y - " . round($sender->getY())"\n§7 Z - " . round($sender->getZ()));
+  if($sender instanceof Player) {
+    if(!isset($args[0])) {
+      $sender->sendMessage("§l§9Coords>§r§7 You're Standing At\n§7 X - " . round($sender->getX()) . "\n§7 Y - " . round($sender->getY()) . "\n§7 Z - " . round($sender->getZ()));
     }
    }else{
      $sender->sendMessage(Core::USE_IN_GAME);
