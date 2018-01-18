@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Potatoe\Command;
 
 use Potatoe\Core;
