@@ -1,9 +1,8 @@
 name: ServerCore
-version: 1.0
-api: [3.0.0-ALPHA10]
-author: Potatoe
+version: 1.1
+api: [3.0.0-ALPHA9, 3.0.0-ALPHA10]
+author: PotatoeTrainYT
 main: Potatoe\Core
-
 permissions:
   core.all:
     default: op
