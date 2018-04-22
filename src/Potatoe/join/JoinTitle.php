@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Potatoe\Join;
+namespace Potatoe\join;
 
 use Potatoe\Core;
 
@@ -10,17 +10,17 @@ use pocketmine\event\Listener;
 use pocketmine\event\player\PlayerJoinEvent;
 use pocketmine\network\mcpe\protocol\LevelEventPacket;
 
-class JoinTitle implements Listener {
+class JoinTitle implements Listener{
 
-    public function onJoin(PlayerJoinEvent $event) {
+    public function onJoin(PlayerJoinEvent $event) : void{
         $player = $event->getPlayer();
         $title = "Welcome";
         $subtitle = "To The Server";
         $pk = new LevelEventPacket();
         $pk->evid = LevelEventPacket::EVENT_GUARDIAN_CURSE;
         $pk->data = 1;
-        $pk->position = $this->player->asVector3();
-        $this->player->dataPacket($pk);
+        $pk->position = $player->asVector3();
+        $player->dataPacket($pk);
         $player->addTitle($title, $subtitle);
     }
 }

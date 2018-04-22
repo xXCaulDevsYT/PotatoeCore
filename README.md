@@ -14,10 +14,10 @@ Want A Core For Your Pocketmine-MP Server? Here's One For You To Edit!
   - [ ] /freeze
   - [ ] /unfreeze
   - [ ] /ts
-  - [ ] /vanish
-  - [ ] /unvanish
-  - [ ] /hub & /lobby
-  - [ ] /spawn
+  - [x] /vanish
+  - [x] /unvanish
+  - [x] /hub & /lobby
+  - [x] /spawn
   
 - [x] Player Join 
   - [x] Chat Text

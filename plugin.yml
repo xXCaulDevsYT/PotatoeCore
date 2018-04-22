@@ -1,6 +1,6 @@
 name: ServerCore
-version: 1.1
-api: [3.0.0-ALPHA9, 3.0.0-ALPHA10, 3.0.0-ALPHA11]
+version: 1.2
+api: 3.0.0-ALPHA12
 author: PotatoeTrainYT
 main: Potatoe\Core
 permissions:
@@ -21,13 +21,19 @@ permissions:
           core.cmd.nick:
             default: op
             description: /nick
+          core.cmd.spawn:
+           default: true
+           description: /spawn
+          core.cmd.vanish:
+           default: op
+           description: /vanish
       core.anti.bypass:
         default: op
-        description: Bypass All Anti Spam Features
+        description: Bypass All anti Spam Features
         children:
           core.anti.bypass.advert:
             default: op
             description: Bypass AAnti-Advertising
           core.bypass.swear:
             default: op
-            description: Bypass Anti-Swearing
+            description: Bypass anti-Swearing
