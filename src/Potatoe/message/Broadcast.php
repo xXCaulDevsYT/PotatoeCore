@@ -17,7 +17,7 @@ class Broadcast extends PluginTask{
         $input = [
             "§e- §bThink of it you might not be the best at Minecraft but theres always someone worse",
             "§e- §bDid you know donating is what keeps us up and running",
-            "§e- §bThank you for playing CubeX Network"
+            "§e- §bThank you for playing DiviniumMC Network"
         ];
         $details = array_rand($input);
         Server::getInstance()->broadcastMessage(C::GRAY . $input[$details]);
