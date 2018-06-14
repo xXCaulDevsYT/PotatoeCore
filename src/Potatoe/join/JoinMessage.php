@@ -17,7 +17,7 @@ class JoinMessage implements Listener{
         $player->sendMessage("§l§6» §aWelcome To §bDivinium§dMC §aNetwork §c!");
         $player->sendMessage("§e- §3Vote: <>");
         $player->sendMessage("§e- §3Store: <>");
-        $player->sendMessage("§e- §3Discord: <https://discord.gg/KqEY2Q>");
+        $player->sendMessage("§e- §3Discord: <https://discord.gg/bpfjN25>");
         $player->sendMessage("§e- §3Playing: <FactionsOP 1>");
         $player->sendMessage("§e- §bCheck our rules with /rules");
         $player->sendMessage("§e- §bTrade In vote Points For Prizes");
