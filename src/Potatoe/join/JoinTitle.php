@@ -14,8 +14,8 @@ class JoinTitle implements Listener{
 
     public function onJoin(PlayerJoinEvent $event) : void{
         $player = $event->getPlayer();
-        $title = "§l§a> §bCube§cX §a<§r";
-        $subtitle = "§7Hub / Lobby";
+        $title = "§l§a> §bDivinium§cMC §a<§r";
+        $subtitle = "§7OP Factions";
         $pk = new LevelEventPacket();
         $pk->evid = LevelEventPacket::EVENT_GUARDIAN_CURSE;
         $pk->data = 1;
