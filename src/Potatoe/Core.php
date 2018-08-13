@@ -20,7 +20,7 @@ use pocketmine\utils\TextFormat as C;
 
 class Core extends PluginBase{
 
-    const PERM_RANK = C::BOLD . C::BLUE . "Permission> " . C::RESET . C::GRAY . "You Need A Rank To Access This command";
+    const PERM_RANK = C::BOLD . C::BLUE . "AquaticMC" . C::RESET . C::GRAY . "You Need A Rank To Access This command";
     const PERM_STAFF = C::BOLD . C::BLUE . "Permission> " . C::RESET . C::GRAY . "Only Staff Can Use This command";
     const USE_IN_GAME = C::BOLD . C::BLUE . "command> " . C::RESET . C::GRAY . "Use command In Game";
 
