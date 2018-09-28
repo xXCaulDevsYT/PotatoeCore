@@ -20,7 +20,7 @@ class AntiSwearing implements Listener{
         $player = $event->getPlayer();
         foreach($this->badwords as $badwords){
             if(strpos($msg, $badwords) !== false){
-                $player->sendMessage(TextFormat::RED . "§l§9Anti-Spam>§r§7 No Swearing");
+                $player->sendMessage(TextFormat::RED . "§7[§cSystem§7] §bSwearing will result in a ban");
                 $event->setCancelled();
                 return;
             }
