@@ -15,9 +15,9 @@ class Broadcast extends PluginTask{
     public function onRun(int $currentTick) : void{
         /** @var array $input */
         $input = [
-            "§e- §bThink of it you might not be the best at Minecraft but theres always someone worse",
-            "§e- §bDid you know donating is what keeps us up and running",
-            "§e- §bThank you for playing DiviniumMC Network"
+            "§7[§dTIP§7] §bDonating helps us grow",
+            "§7[§dTIP§7] §bDont give up at pvp remember theres always someone worse than you",
+            "§7[§dTIP§7] §bTry out /kits for a epic kit"
         ];
         $details = array_rand($input);
         Server::getInstance()->broadcastMessage(C::GRAY . $input[$details]);
