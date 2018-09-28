@@ -1,7 +1,7 @@
-name: ServerCore
-version: 1.2
+name: AuroraCore
+version: 1.0
 api: 3.0.0-ALPHA12
-author: PotatoeTrainYT
+author: EmeraldYT
 main: Potatoe\Core
 permissions:
   core.all:
