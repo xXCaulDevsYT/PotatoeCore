@@ -27,7 +27,7 @@ class FeedCommand extends BaseCommand{
             }else{
                 $sender->setFood(20);
                 $sender->setSaturation(20);
-                $sender->sendMessage("§l§9Feed> §r§7You Have Been Fed");
+                $sender->sendMessage("§l[]");
             }
         }else{
             $sender->sendMessage(Core::USE_IN_GAME);
