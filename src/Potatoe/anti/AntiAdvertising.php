@@ -19,7 +19,7 @@ class AntiAdvertising implements Listener{
         $player = $event->getPlayer();
         foreach($this->links as $links){
             if(strpos($msg, $links) !== false){
-                $player->sendMessage(TextFormat::RED . "§l§7[§bX-BOT§7]§r§e> §7Hi I Am A Personal Intelligence Anti Advertising Bot Stop Advertising Or you will be banned");
+                $player->sendMessage(TextFormat::RED . "§7[§cSystem§7] §bAdvertising will result in a ban");
                 $event->setCancelled(true);
                 return;
             }
