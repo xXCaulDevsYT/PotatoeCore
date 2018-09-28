@@ -25,14 +25,14 @@ class NickCommand extends BaseCommand{
         if($sender instanceof Player){
             if($sender->hasPermission("core.all") || !$sender->hasPermission("core.cmd.all") || !$sender->hasPermission("core.cmd.nick")){
                 if(!isset($args[0])){
-                    $sender->sendMessage("§b(§d!§b) §6Usage §l§c» §r§7/nick <nick-name>");
+                    $sender->sendMessage("§7[§cSystem§7] §bno permisions.");
                 }else{
                     if($args[0] == "off"){
                         $this->unNick($sender);
-                        $sender->sendMessage("§b(§d!) §7 Your Nickname Is §1OFF §c!");
+                        $sender->sendMessage("§7[§cSystem§7] §bYour nickname is set to §6OFF");
                     }else{
                         $this->nick($sender, $args[0]);
-                        $sender->sendMessage("§b(§d!§b) §7 Your Nickname Is Now §e " . $args[0]);
+                        $sender->sendMessage("§7[§cSystem§7] §b Your Nickname Is Now §6 " . $args[0]);
                     }
                 }
             }else{
